@@ -1,0 +1,30 @@
+﻿<Window x:Class="Clock.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Clock"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550.3" Width="346" WindowStyle="SingleBorderWindow">
+    <Grid RenderTransformOrigin="0.5,0.5" Margin="0,0,0,-76">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF11194A"/>
+                <GradientStop Color="#FF020619" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Ellipse HorizontalAlignment="Center" Margin="0,34,0,0" VerticalAlignment="Top" StrokeThickness="19" Width="275" Height="275">
+            <Ellipse.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF12A46B"/>
+                    <GradientStop Color="#FF4475BB" Offset="1"/>
+                    <GradientStop Color="#FF128ED0" Offset="0.653"/>
+                </LinearGradientBrush>
+            </Ellipse.Stroke>
+        </Ellipse>
+        <TextBlock HorizontalAlignment="Left" Height="154" Margin="108,73,0,0" TextWrapping="Wrap" Text="06" VerticalAlignment="Top" Width="154" FontSize="120" Foreground="White" FontFamily="Tw Cen MT"/>
+        <TextBlock HorizontalAlignment="Left" Height="69" Margin="142,197,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="128" Foreground="White" FontSize="58" FontFamily="Tw Cen MT"/>
+        <TextBlock Height="89" Margin="30,376,30,0" TextWrapping="Wrap" Text="13 September" VerticalAlignment="Top" FontSize="42" Foreground="#FF5681B7" FontFamily="Cascadia Code ExtraLight" TextAlignment="Center"/>
+        <TextBlock Height="89" Margin="42,474,18,0" TextWrapping="Wrap" Text="2024" VerticalAlignment="Top" FontSize="42" Foreground="#FF5A80B3" FontFamily="Cascadia Code ExtraLight" TextAlignment="Center"/>
+    </Grid>
+</Window>
